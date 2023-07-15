@@ -74,7 +74,6 @@ bool getWebCameraImage(planning::CameraMsg::Request &req,
 
 int main(int argc, char **argv)
 {
-    //promena
     ros::init(argc, argv, "capture_image_node");
     ros::NodeHandle nh;
 
