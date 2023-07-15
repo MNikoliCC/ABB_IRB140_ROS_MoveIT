@@ -1,0 +1,4 @@
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/server.cpp:[m[K In function ‘[01m[Kbool getCameraImage(planning::CameraMsg::Request&, planning::CameraMsg::Response&)[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/server.cpp:35:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   35 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

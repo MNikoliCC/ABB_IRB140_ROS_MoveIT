@@ -1,0 +1,1 @@
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/abb_irb140_gazebo/lib/pkgconfig/abb_irb140_gazebo.pc

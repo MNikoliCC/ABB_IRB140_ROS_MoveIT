@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/noetic/include",
+                "/usr/include/eigen3",
+                "${workspaceFolder}/src/planning/include/planning",
+                "/home/pilaciv/ws_moveit/src/moveit_visual_tools/include",
+                "/home/pilaciv/ws_moveit/src/rviz_visual_tools/include",
+                "${workspaceFolder}/src/planning/src",
+                "~/Workspaces/abb_irb140_ws/devel/include",
+                "/usr/include/opencv4"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

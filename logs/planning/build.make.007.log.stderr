@@ -1,0 +1,5 @@
+The dependencies of the message/service 'planning/CameraMsg' have changed. Please rerun cmake.
+make[2]: *** [CMakeFiles/_planning_generate_messages_check_deps_CameraMsg.dir/build.make:57: CMakeFiles/_planning_generate_messages_check_deps_CameraMsg] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2827: CMakeFiles/_planning_generate_messages_check_deps_CameraMsg.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

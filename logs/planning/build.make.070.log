@@ -1,0 +1,20 @@
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[ 13%] Built target scan
+[ 13%] Built target _planning_generate_messages_check_deps_CameraMsg
+[ 33%] Built target run
+[ 53%] Built target server
+[ 73%] Built target planning_generate_messages_eus
+[ 73%] Built target planning_generate_messages_cpp
+[ 80%] Built target planning_generate_messages_lisp
+[ 86%] Built target planning_generate_messages_nodejs
+[100%] Built target planning_generate_messages_py
+[100%] Built target planning_generate_messages

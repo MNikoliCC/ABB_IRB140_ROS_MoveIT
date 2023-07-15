@@ -1,0 +1,5 @@
+abb_resources
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/abb_resources/cmake.lock /home/pilaciv/Workspaces/abb_irb140_ws/devel/./cmake.lock
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/abb_resources/share/abb_resources/cmake/abb_resourcesConfig.cmake /home/pilaciv/Workspaces/abb_irb140_ws/devel/share/abb_resources/cmake/abb_resourcesConfig.cmake
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/abb_resources/share/abb_resources/cmake/abb_resourcesConfig-version.cmake /home/pilaciv/Workspaces/abb_irb140_ws/devel/share/abb_resources/cmake/abb_resourcesConfig-version.cmake
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/abb_resources/lib/pkgconfig/abb_resources.pc /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/pkgconfig/abb_resources.pc

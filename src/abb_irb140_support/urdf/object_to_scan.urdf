@@ -1,0 +1,103 @@
+<!-- <?xml version="1.0" ?>
+<robot name="object">
+
+<link name="base2"/>
+
+  <link name="obj_position_link">
+      <visual>
+      <origin rpy="0 1.5708 0" xyz="-0.25 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5708 0" xyz="-0.125 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+      <material name="blue"/>
+    </collision>
+  </link>
+
+  <joint name="base_link-obj_position_link" type="fixed">
+    <origin rpy="0 1.5708 0" xyz="0.5 0 0"/>
+    <parent link="base_link"/>
+    <child link="obj_position_link"/>
+  </joint>
+
+</robot> -->
+
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="my_robot">
+
+  <!-- Define existing robot links and joints here -->
+
+  <!-- Define the base link -->
+   <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/visual/base_link.stl" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="abb_orange">
+        <color rgba="1 0.43 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/collision/base_link.stl" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="yellow">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </collision>
+  </link>
+
+  <!-- Add an object -->
+  <link name="object_link">
+    <visual>
+      <!-- Define the object's visual properties -->
+      <origin rpy="0 1.5708 0" xyz="-0.25 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5708 0" xyz="-0.125 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- <link name="plane_link">
+    <visual>
+      <!-- Define the object's visual properties -->
+      <origin rpy="0 1.5708 0" xyz="-0.25 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5708 0" xyz="-0.125 0 0"/>
+      <geometry>
+        <cylinder radius="0.21" length="0.5"/>
+      </geometry>
+    </collision>
+  </link> -->
+
+  <joint name="object_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_link"/> <!-- Specify the parent link of the object -->
+    <child link="object_link"/> <!-- Specify the child link of the object -->
+  </joint>
+
+</robot>
+

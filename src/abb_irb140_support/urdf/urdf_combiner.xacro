@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="combined_urdf">
+
+  <!-- Include object_urdf -->
+  <xacro:include filename="$(find abb_irb140_support)/urdf/object_to_scan.urdf" />
+
+  <!-- Include robot_urdf -->
+  <xacro:include filename="$(find abb_irb140_support)/urdf/irb140.urdf" />
+
+</robot>

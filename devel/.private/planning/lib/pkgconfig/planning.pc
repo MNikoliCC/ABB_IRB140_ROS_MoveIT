@@ -1,0 +1,8 @@
+prefix=/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning
+
+Name: planning
+Description: Description of planning
+Version: 0.0.0
+Cflags: -I/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/include -I/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include
+Libs: -L${prefix}/lib -lplanning
+Requires: roscpp

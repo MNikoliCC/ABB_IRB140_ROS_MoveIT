@@ -1,0 +1,22 @@
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::moveCircular()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:73:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_text[m[K’ was not declared in this scope
+   73 |                 [01;31m[Kpose_text[m[K = oss.str();
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::captureImage()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:110:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_text[m[K’ was not declared in this scope
+  110 |                 std::string filename = "/home/pilaciv/opencv_images/image" + [01;31m[Kpose_text[m[K + ".jpg";
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::moveCircular()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:73:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_text[m[K’ was not declared in this scope
+   73 |                 [01;31m[Kpose_text[m[K = oss.str();
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::captureImage()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:110:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_text[m[K’ was not declared in this scope
+  110 |                 std::string filename = "/home/pilaciv/opencv_images/image" + [01;31m[Kpose_text[m[K + ".jpg";
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/run.dir/build.make:76: CMakeFiles/run.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2096: CMakeFiles/run.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1203: CMakeFiles/server.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

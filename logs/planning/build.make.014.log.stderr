@@ -1,0 +1,11 @@
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:10:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kros::ServiceClient my_planning::MyPlanningClass::client[m[K’ is private within this context
+   10 |     my_planning_.[01;31m[Kclient[m[K = nh.serviceClient<planning::CameraMsg>("capture_image");
+      |                  [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:1[m[K:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:85:32:[m[K [01;36m[Knote: [m[Kdeclared private here
+   85 |             ros::ServiceClient [01;36m[Kclient[m[K = nh.serviceClient<planning::CameraMsg>("capture_image");
+      |                                [01;36m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/run.dir/build.make:63: CMakeFiles/run.dir/src/run.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2096: CMakeFiles/run.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

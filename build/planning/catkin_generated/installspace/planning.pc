@@ -1,0 +1,8 @@
+prefix=/home/pilaciv/Workspaces/abb_irb140_ws/install
+
+Name: planning
+Description: Description of planning
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lplanning
+Requires: roscpp

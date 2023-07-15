@@ -1,0 +1,32 @@
+[0m[ INFO] [1688038123.515998283]: Loading robot model 'abb_irb140'...[0m
+[0m[ INFO] [1688038124.668706126]: Ready to take commands for planning group manipulator.[0m
+ MOVE CIRCULAR
+[0m[ INFO] [1688038125.167244504]: Quaternion between link_6 and obj_position_link:
+[0.000000, 0.707108, 0.000000, 0.707105][0m
+ANGLE: 5
+header: 
+  seq: 0
+  stamp: 1688038125.260608817
+  frame_id: base_link
+pose: 
+  position: 
+    x: 0.515
+    y: 0
+    z: 0.712
+  orientation: 
+    x: 0
+    y: 0
+    z: 0
+    w: 1
+
+
+position: 
+  x: 0.709201
+  y: 0.0183027
+  z: 0.5
+orientation: 
+  x: 0
+  y: 1
+  z: 0
+  w: -3.67321e-06
+
