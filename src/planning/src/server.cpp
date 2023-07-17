@@ -27,7 +27,7 @@ bool getSimulatedCameraImage(planning::CameraMsg::Request &req,
 bool getWebCameraImage(planning::CameraMsg::Request &req,
                     planning::CameraMsg::Response &resp)
 {
-    // int numCameras = 10; // Maximum number of cameras to check
+    // int numCameras = 10;
 
     // for (int i = 0; i < numCameras; i++)
     // {

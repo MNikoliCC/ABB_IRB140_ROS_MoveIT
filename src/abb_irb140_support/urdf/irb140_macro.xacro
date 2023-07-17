@@ -252,7 +252,7 @@
     <child link="obj_position_link"/>
   </joint> -->
 
-  <link name="${prefix}obj_position_link">
+  <!-- <link name="${prefix}obj_position_link">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
@@ -271,10 +271,10 @@
   </link>
 
   <joint name="${prefix}base_link-obj_position_link" type="fixed">
-    <origin rpy="0 0 0" xyz="0.4 0 0"/>
+    <origin rpy="0 0 0" xyz="0.5 0 0"/>
     <parent link="${prefix}base_link"/>
     <child link="${prefix}obj_position_link"/>
-  </joint>
+  </joint> -->
 
 </xacro:macro>
 </robot>

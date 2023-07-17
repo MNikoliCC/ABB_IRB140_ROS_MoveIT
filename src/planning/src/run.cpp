@@ -12,9 +12,6 @@ int main(int argc, char **argv)
     ros::AsyncSpinner spinner(2);
     spinner.start();
 
-    // my_planning::MyPlanningClass::
-
-
     if(argc != 2)
     {
         ROS_INFO(" ");
@@ -54,6 +51,13 @@ int main(int argc, char **argv)
             my_planning_.cartesianPath();
             my_planning_.resetValues();
             my_planning_.moveCircular();
+        }
+            break;
+        case 7:
+        {
+            my_planning_.cartesianPath();
+            my_planning_.resetValues();
+            my_planning_.goToObject();
         }
             break;
     }

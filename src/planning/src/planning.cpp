@@ -11,7 +11,7 @@ namespace my_planning
             // Eigen::Vector3d point1(0.5, 0.0, 0.0);
             // Eigen::Vector3d point2(target_pose.position.x, target_pose.position.y, 0.5);
             Eigen::Vector3d point1(center, 0.0, height / 2);
-            Eigen::Vector3d point2(target_pose.position.x, target_pose.position.y, 0.35); //floor
+            Eigen::Vector3d point2(target_pose.position.x, target_pose.position.y, 0.4); //floor
 
             Eigen::Vector3d vector = point1 - point2;
 
@@ -45,6 +45,25 @@ namespace my_planning
             target_pose.orientation.z = quaternion.z();
         }
 
+        void MyPlanningClass::objectPosition()
+        {
+            Eigen::Vector3d unitX(1.0, 0.0, 0.0);
+
+            Eigen::Vector3d point1(center, 0.0, 0.0);
+            Eigen::Vector3d point2(center, 0.0, 0.1);
+
+            Eigen::Vector3d vector = point1 - point2;
+
+            vector.normalize();
+
+            quaternion.setFromTwoVectors(unitX, vector);
+
+            target_pose.orientation.w = quaternion.w();
+            target_pose.orientation.x = quaternion.x();
+            target_pose.orientation.y = quaternion.y();
+            target_pose.orientation.z = quaternion.z();
+        }
+
         void MyPlanningClass::moveCircular()
         {
             // move_group.setEndEffector("tool0");
@@ -71,6 +90,9 @@ namespace my_planning
                     angle = step / 2;
                     floor_level = false;
                 }
+
+                label:
+
                 for (angle; angle <= 360.0; angle += step)
                 {
                     std::cout << "ANGLE:" << angle << std::endl;
@@ -79,16 +101,33 @@ namespace my_planning
                     // target_pose.position.y = 0.21 * sin(angle * RAD2DEG);
                     // target_pose.position.z = 0.5;
 
-                    if(length >= width)
-                    {
-                        target_pose.position.x = center + (length + offset) * cos(angle * RAD2DEG);
-                        target_pose.position.y = (length + offset) * sin(angle * RAD2DEG);
-                    }
-                    else
-                    {
-                        target_pose.position.x = center + (width + offset) * cos(angle * RAD2DEG);
-                        target_pose.position.y = (width + offset) * sin(angle * RAD2DEG);
-                    }
+                    // if(!smaller_radius)
+                    // {
+                        if(length >= width)
+                        {
+                            target_pose.position.x = center + (length + offset) * cos(angle * RAD2DEG);
+                            target_pose.position.y = (length + offset) * sin(angle * RAD2DEG);
+                        }
+                        else
+                        {
+                            target_pose.position.x = center + (width + offset) * cos(angle * RAD2DEG);
+                            target_pose.position.y = (width + offset) * sin(angle * RAD2DEG);
+                        }
+                    // }
+                    // else
+                    // {
+                    //     if(length >= width)
+                    //     {
+                    //         target_pose.position.x = center + length * cos(angle * RAD2DEG);
+                    //         target_pose.position.y = length * sin(angle * RAD2DEG);
+                    //     }
+                    //     else
+                    //     {
+                    //         target_pose.position.x = center + width * cos(angle * RAD2DEG);
+                    //         target_pose.position.y = width * sin(angle * RAD2DEG);
+                    //     }
+                    // }
+                    
                     target_pose.position.z = floor;
 
                     setQuaternion();
@@ -121,6 +160,30 @@ namespace my_planning
                     captureImage();
                 }
             }
+
+            // if(!smaller_radius && floor >= height)
+            // {
+            //     smaller_radius = true;
+            //     step = step * 2;
+            //     goto label;
+            // }
+        }
+
+        void MyPlanningClass::goToObject()
+        {
+            target_pose.position.x = center;
+            target_pose.position.y = 0.0;
+            target_pose.position.z = 0.1;
+
+            objectPosition();
+
+            move_group.setPoseTarget(target_pose);
+            bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+            if(!success) //execute
+                throw std::runtime_error("No plan found");
+
+            auto error_code = move_group.execute(my_plan); //blocking
+            std::cout << "Error code " << error_code << std::endl;
         }
 
         void MyPlanningClass::captureImage()

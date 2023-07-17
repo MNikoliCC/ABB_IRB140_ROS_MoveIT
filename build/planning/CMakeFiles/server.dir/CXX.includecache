@@ -96,7 +96,7 @@ moveit_visual_tools/moveit_visual_tools.h
 yaml-cpp/yaml.h
 -
 
-/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/server.cpp
+/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp
 planning.h
 -
 

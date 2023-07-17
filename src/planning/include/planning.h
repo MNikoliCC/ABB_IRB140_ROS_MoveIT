@@ -65,6 +65,8 @@ namespace my_planning
             void setRPYtoQuaternion();
             void setQuaternion();
             void captureImage();
+            void objectPosition();
+            void goToObject();
 
             ros::ServiceClient client;
 
@@ -75,10 +77,11 @@ namespace my_planning
             double angle;
             double floor;
             bool floor_level = false;
+            bool smaller_radius = false;
             double height = 0.2;
             double width = 0.1;
             double length = 0.1;
-            double center = 0.4;
+            double center = 0.5;
             double offset = 0.1;
             double step = 15.0;
 
