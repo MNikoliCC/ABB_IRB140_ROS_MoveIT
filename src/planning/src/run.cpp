@@ -5,8 +5,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "planning_node");
     ros::NodeHandle nh;
 
-    my_planning::MyPlanningClass my_planning_;
-
+    my_planning::MyPlanningClass my_planning_(nh);
     my_planning_.client = nh.serviceClient<planning::CameraMsg>("capture_image");
 
     ros::AsyncSpinner spinner(2);
@@ -26,16 +25,19 @@ int main(int argc, char **argv)
     {
         case 1:
         {
+            my_planning_.addObjects();
             my_planning_.goToPoseGoal();
         }
             break;
         case 2:
         {
+            my_planning_.addObjects();
             my_planning_.goToJointState();
         }
             break;
         case 3:
         {
+            my_planning_.addObjects();
             my_planning_.cartesianPath();
             my_planning_.resetValues();
         }
@@ -48,6 +50,7 @@ int main(int argc, char **argv)
             break;
         case 6:
         {
+            my_planning_.addObjects();
             my_planning_.cartesianPath();
             my_planning_.resetValues();
             my_planning_.moveCircular();

@@ -1,3 +1,13 @@
 <launch>
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find abb_irb140_gazebo)/urdf/irb140.xacro'" />
+  <arg name="param_height" />
+  <arg name="param_width" />
+  <arg name="param_length" />
+  <arg name="param_center" />
+  <arg name="param_value" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find abb_irb140_gazebo)/urdf/irb140.xacro'
+          param_height:=$(arg param_height)
+          param_width:=$(arg param_width)
+          param_length:=$(arg param_length)
+          param_center:=$(arg param_center)
+          param_value:=$(arg param_value)" />
 </launch>

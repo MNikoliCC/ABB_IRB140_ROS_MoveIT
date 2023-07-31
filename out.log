@@ -1,32 +1,949 @@
-[0m[ INFO] [1688038123.515998283]: Loading robot model 'abb_irb140'...[0m
-[0m[ INFO] [1688038124.668706126]: Ready to take commands for planning group manipulator.[0m
+[0m[ INFO] [1690025623.964529472]: Loading robot model 'abb_irb140'...[0m
+[0m[ INFO] [1690025625.246678305, 6272.538000000]: Ready to take commands for planning group manipulator.[0m
+[0m[ INFO] [1690025630.699031404, 6277.984000000]: Percentage of path followed: 100%[0m
  MOVE CIRCULAR
-[0m[ INFO] [1688038125.167244504]: Quaternion between link_6 and obj_position_link:
-[0.000000, 0.707108, 0.000000, 0.707105][0m
-ANGLE: 5
-header: 
-  seq: 0
-  stamp: 1688038125.260608817
-  frame_id: base_link
-pose: 
-  position: 
-    x: 0.515
-    y: 0
-    z: 0.712
-  orientation: 
-    x: 0
-    y: 0
-    z: 0
-    w: 1
-
-
-position: 
-  x: 0.709201
-  y: 0.0183027
-  z: 0.5
-orientation: 
-  x: 0
-  y: 1
-  z: 0
-  w: -3.67321e-06
-
+ANGLE:15
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.130526
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: -0.991445
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025635.931702370, 6283.213000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:30
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.258819
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: -0.965926
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025643.656583335, 6290.932000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:45
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.382683
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: -0.92388
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025649.418807359, 6296.690000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:60
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: -0.866025
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025655.181973425, 6302.449000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:75
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.608761
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: -0.793353
+[0m[ INFO] [1690025655.927585316, 6303.194000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:90
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.707107
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.707107
+[0m[ INFO] [1690025658.907014369, 6306.171000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:105
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.793353
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.608761
+[0m[ INFO] [1690025659.949061194, 6307.212000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:120
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.5
+[0m[ INFO] [1690025660.988193036, 6308.250000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:135
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.92388
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.382683
+[0m[ INFO] [1690025662.047805754, 6309.309000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:150
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.965926
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.258819
+[0m[ INFO] [1690025663.193164794, 6310.453000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:165
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.991445
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -0.130526
+[0m[ INFO] [1690025664.434152885, 6311.693000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:180
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 1
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: -6.12323e-17
+[0m[ INFO] [1690025665.800287572, 6313.057000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:195
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.991445
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.130526
+[0m[ INFO] [1690025670.583178772, 6317.836000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:210
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.965926
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.258819
+[0m[ INFO] [1690025672.161415002, 6319.413000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:225
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.92388
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.382683
+[0m[ INFO] [1690025673.602166558, 6320.852000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:240
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.5
+[0m[ INFO] [1690025674.861535717, 6322.110000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:255
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.793353
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.608761
+[0m[ INFO] [1690025676.011063820, 6323.258000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:270
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.707107
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 0.707107
+[0m[ INFO] [1690025677.183866495, 6324.430000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:285
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.608761
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: 0.793353
+[0m[ INFO] [1690025681.050795485, 6328.293000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:300
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: 0.866025
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025687.110491191, 6334.349000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:315
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.382683
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: 0.92388
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025695.120606666, 6342.348000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:330
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.258819
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: 0.965926
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025700.908287727, 6348.130000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:345
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.130526
+target_pose.orientation.x: 0
+target_pose.orientation.y: -0
+target_pose.orientation.z: 0.991445
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025706.674380740, 6353.892000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:360
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0
+target_pose.orientation.z: 1
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025712.438828523, 6359.652000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:7.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.237934
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.939787
+target_pose.orientation.z: -0.245334
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025722.725909719, 6369.931000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:22.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.294667
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.758846
+target_pose.orientation.z: -0.580796
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: 0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025728.830465236, 6376.031000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:37.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.381053
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.586812
+target_pose.orientation.z: -0.714458
+[0m[ INFO] [1690025729.593831428, 6376.793000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:52.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.477235
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.468546
+target_pose.orientation.z: -0.743445
+[0m[ INFO] [1690025733.755844080, 6380.952000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:67.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.573462
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.389924
+target_pose.orientation.z: -0.720486
+[0m[ INFO] [1690025734.796668084, 6381.991000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:82.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.66455
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.336478
+target_pose.orientation.z: -0.6672
+[0m[ INFO] [1690025735.857520335, 6383.051000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:97.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.747244
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.299242
+target_pose.orientation.z: -0.593364
+[0m[ INFO] [1690025736.918609387, 6384.111000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:112.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.819232
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.272947
+target_pose.orientation.z: -0.50434
+[0m[ INFO] [1690025737.961372154, 6385.153000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:127.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.878776
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.254453
+target_pose.orientation.z: -0.403742
+[0m[ INFO] [1690025739.003162593, 6386.194000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:142.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.924553
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.241854
+target_pose.orientation.z: -0.294463
+[0m[ INFO] [1690025740.262516274, 6387.452000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:157.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.9556
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.233996
+target_pose.orientation.z: -0.179093
+[0m[ INFO] [1690025741.617276193, 6388.806000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:172.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.971281
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.230218
+target_pose.orientation.z: -0.060099
+[0m[ INFO] [1690025747.492044088, 6394.675000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:187.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.971281
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.230218
+target_pose.orientation.z: 0.060099
+[0m[ INFO] [1690025749.216302072, 6396.398000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:202.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.9556
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.233996
+target_pose.orientation.z: 0.179093
+[0m[ INFO] [1690025756.415730197, 6403.590000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:217.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.924553
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.241854
+target_pose.orientation.z: 0.294463
+[0m[ INFO] [1690025760.160130305, 6407.331000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:232.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.878776
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.254453
+target_pose.orientation.z: 0.403742
+[0m[ INFO] [1690025761.704621147, 6408.874000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:247.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.819232
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.272947
+target_pose.orientation.z: 0.50434
+[0m[ INFO] [1690025763.065195992, 6410.233000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:262.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.747244
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.299242
+target_pose.orientation.z: 0.593364
+[0m[ INFO] [1690025764.205366096, 6411.372000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:277.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.66455
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.336478
+target_pose.orientation.z: 0.6672
+[0m[ INFO] [1690025765.351397247, 6412.517000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:292.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.573462
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.389924
+target_pose.orientation.z: 0.720486
+[0m[ INFO] [1690025766.650961080, 6413.815000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:307.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.477235
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.468546
+target_pose.orientation.z: 0.743445
+[0m[ INFO] [1690025774.534681330, 6421.691000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:322.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.381053
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.586812
+target_pose.orientation.z: 0.714458
+[0m[ INFO] [1690025775.596058700, 6422.752000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:337.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.294667
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.758846
+target_pose.orientation.z: 0.580796
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: -0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025781.667514120, 6428.819000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:352.5
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.237934
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.939787
+target_pose.orientation.z: 0.245334
+No plan found, going through LOOP now
+AFTER
+target_pose._neworientation.w_new: 0.5
+target_pose._neworientation.x_new: -0
+target_pose._neworientation.y_new: 0.5
+target_pose._neworientation.z_new: 0.5
+Plan FOUND!
+[0m[ INFO] [1690025790.163874985, 6437.309000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:15
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.398113
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.888074
+target_pose.orientation.z: -0.22985
+[0m[ INFO] [1690025790.929423474, 6438.074000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:30
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.440243
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.803087
+target_pose.orientation.z: -0.401544
+[0m[ INFO] [1690025794.469861773, 6441.610000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:45
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.707107
+target_pose.orientation.z: -0.5
+[0m[ INFO] [1690025795.811287969, 6442.951000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:60
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.568527
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.621876
+target_pose.orientation.z: -0.53856
+[0m[ INFO] [1690025796.973658801, 6444.112000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:75
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.639135
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.553175
+target_pose.orientation.z: -0.534326
+[0m[ INFO] [1690025798.034988620, 6445.173000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:90
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.707107
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.5
+target_pose.orientation.z: -0.5
+[0m[ INFO] [1690025798.975403382, 6446.112000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:105
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.769095
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.459701
+target_pose.orientation.z: -0.444037
+[0m[ INFO] [1690025800.033894560, 6447.169000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:120
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.822664
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.429766
+target_pose.orientation.z: -0.372188
+[0m[ INFO] [1690025801.096395115, 6448.231000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:135
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.408248
+target_pose.orientation.z: -0.288675
+[0m[ INFO] [1690025802.158714583, 6449.292000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:150
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.897879
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.393765
+target_pose.orientation.z: -0.196883
+[0m[ INFO] [1690025803.314469844, 6450.447000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:165
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.917337
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.385413
+target_pose.orientation.z: -0.0997522
+[0m[ INFO] [1690025808.000325267, 6455.128000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:180
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.92388
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.382683
+target_pose.orientation.z: -4.68652e-17
+[0m[ INFO] [1690025809.666958037, 6456.793000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:195
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.917337
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.385413
+target_pose.orientation.z: 0.0997522
+[0m[ INFO] [1690025811.842763804, 6458.967000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:210
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.897879
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.393765
+target_pose.orientation.z: 0.196883
+[0m[ INFO] [1690025820.017896158, 6467.134000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:225
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.408248
+target_pose.orientation.z: 0.288675
+[0m[ INFO] [1690025821.695734795, 6468.811000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:240
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.822664
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.429766
+target_pose.orientation.z: 0.372188
+[0m[ INFO] [1690025822.957071634, 6470.071000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:255
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.769095
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.459701
+target_pose.orientation.z: 0.444037
+[0m[ INFO] [1690025824.020325290, 6471.133000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:270
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.707107
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.5
+target_pose.orientation.z: 0.5
+[0m[ INFO] [1690025825.182157326, 6472.290000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:285
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.639135
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.553175
+target_pose.orientation.z: 0.534326
+[0m[ INFO] [1690025826.324723050, 6473.435000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:300
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.568527
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.621876
+target_pose.orientation.z: 0.53856
+[0m[ INFO] [1690025827.617087562, 6474.726000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:315
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.707107
+target_pose.orientation.z: 0.5
+[0m[ INFO] [1690025835.487813225, 6482.589000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:330
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.440243
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.803087
+target_pose.orientation.z: 0.401544
+[0m[ INFO] [1690025836.548421497, 6483.649000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:345
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.398113
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.888074
+target_pose.orientation.z: 0.22985
+[0m[ INFO] [1690025837.709978855, 6484.810000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:360
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.382683
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.92388
+target_pose.orientation.z: 2.26285e-16
+[0m[ INFO] [1690025839.055658762, 6486.154000000]: Visualizing plan 1 as trajectory line[0m
+Error code SUCCESS
+0
+IM HERE 1 
+IM HERE 2 
+RADIUS 0.1
+ANGLE:15
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.398113
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.888074
+target_pose.orientation.z: -0.22985
+[0m[ INFO] [1690025840.535726450, 6487.633000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:45
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.707107
+target_pose.orientation.z: -0.5
+[0m[ INFO] [1690025842.178334831, 6489.274000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:75
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.639135
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.553175
+target_pose.orientation.z: -0.534326
+[0m[ INFO] [1690025849.187790492, 6496.273000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:105
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.769095
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.459701
+target_pose.orientation.z: -0.444037
+[0m[ INFO] [1690025850.462309204, 6497.549000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:135
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.408248
+target_pose.orientation.z: -0.288675
+[0m[ INFO] [1690025851.824482390, 6498.910000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:165
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.917337
+target_pose.orientation.x: 0
+target_pose.orientation.y: 0.385413
+target_pose.orientation.z: -0.0997522
+[0m[ INFO] [1690025853.288893224, 6500.373000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:195
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.917337
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.385413
+target_pose.orientation.z: 0.0997522
+[0m[ INFO] [1690025855.206954526, 6502.290000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:225
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.866025
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.408248
+target_pose.orientation.z: 0.288675
+[0m[ INFO] [1690025862.797169558, 6509.872000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:255
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.769095
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.459701
+target_pose.orientation.z: 0.444037
+[0m[ INFO] [1690025864.661968578, 6511.735000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:285
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.639135
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.553175
+target_pose.orientation.z: 0.534326
+[0m[ INFO] [1690025866.184559473, 6513.256000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:315
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.5
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.707107
+target_pose.orientation.z: 0.5
+[0m[ INFO] [1690025867.605253744, 6514.676000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+ANGLE:345
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.398113
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.888074
+target_pose.orientation.z: 0.22985
+[0m[ INFO] [1690025868.933300820, 6516.003000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0
+RADIUS 0
+ANGLE:30
+Setting the quaternion!
+BEFORE:
+target_pose.orientation.w: 0.707107
+target_pose.orientation.x: -0
+target_pose.orientation.y: 0.707107
+target_pose.orientation.z: 0
+[0m[ INFO] [1690025874.427962533, 6521.492000000]: Visualizing plan 2 as trajectory line[0m
+Error code SUCCESS
+0

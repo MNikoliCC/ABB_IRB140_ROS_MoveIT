@@ -4,6 +4,10 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="abb_irb140" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<!-- <xacro:include filename="$(find abb_irb140_support)/urdf/test.xacro" /> -->
+<!-- <xacro:property name="param_value" value="0.5" /> -->
+
   <!-- link list -->
   <link name="base_link">
     <visual>
@@ -120,9 +124,53 @@
       <material name="yellow"/>
     </collision>
   </link>
-  <link name="tool0"/>
-  <!-- end of link list -->
-  <!-- joint list -->
+  <!-- <link name="tool0">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.515 0.001 -0.181"/>
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/visual/tool2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.515 0.001 -0.181"/>
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/collision/tool0.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </collision>
+  </link> -->
+  <link name="tool0">
+    <visual>
+      <!-- <origin rpy="0 0 0" xyz="-0.6155 -0.022 -0.6879"/>  -->
+      <origin rpy="0 0 0" xyz="-0.5945 -0.022 -0.6879"/>
+      <!-- <origin rpy="0 0 0" xyz="-0.5845 -0.0234 -0.765"/> fail -->
+      <!-- <origin rpy="0 0 0" xyz="-0.12145 -0.0234 -0.765"/> -->
+      <!-- <origin rpy="0 -1.5708 0" xyz="-0.5145 0 -0.711"/> -->
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/visual/tool0.stl" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.5945 -0.022 -0.6879"/>
+      <!-- <origin rpy="0 0 0" xyz="-0.5145 0 -0.711"/> -->
+      <geometry>
+        <mesh filename="package://abb_irb140_support/meshes/irb140/visual/tool0.stl" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </collision>
+  </link>
+  <link name="tool1"/>
+  
   <joint name="joint_1" type="revolute">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="base_link"/>
@@ -143,6 +191,9 @@
     <child link="link_3"/>
     <axis xyz="0 1 0"/>
     <limit effort="0" lower="-4.0143" upper="0.87274434" velocity="4.5379"/>
+    <!-- <limit effort="0" lower="-4.0143" upper="0.87274434" velocity="4.5379"/> -->
+    <!-- -4.0143 MOVEIT -->
+    <!-- -1.22173 ORIGINAL-->
   </joint>
   <joint name="joint_4" type="revolute">
     <origin rpy="0 0 0" xyz="0.239 0.065 0"/>
@@ -168,8 +219,18 @@
   <joint name="joint_6-tool0" type="fixed">
     <parent link="link_6"/>
     <child link="tool0"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <!-- <origin rpy="0 0 0" xyz="0.07 0.0234 0.054"/> fail -->
+    <!-- <origin rpy="3.14159 1.5708 0" xyz="0.07 0.0234 0.054"/> -->
+    <!-- <origin rpy="3.14159 1.5708 0" xyz="0.073 0.019 0"/> -->
+    <origin rpy="0 0 0" xyz="0.101 0.022 -0.023"/> 
+    <!-- <origin rpy="0 0 0" xyz="0.011 0.022 -0.023"/> -->
   </joint>
+  <joint name="tool0-tool1" type="fixed">
+    <parent link="tool0"/>
+    <child link="tool1"/>
+    <origin rpy="3.14159 1.5708 0" xyz="0 0 0"/>
+  </joint>
+  
   <!-- end of joint list -->
   <!-- ROS base_link to ABB World Coordinates transform  1.5708-->
   <link name="base"/>
@@ -197,20 +258,74 @@
     </collision>
   </link>
 
-  <!-- <link name="obj_position_link">
+  <!-- <link name="holder_link">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
       <geometry>
-        <box size="0.1 0.1 0.2"/>
+        <box size="0.025 0.025 0.5"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.15"/>
       <geometry>
-        <box size="0.1 0.1 0.2"/>
+        <box size="0.025 0.025 0.3"/>
+      </geometry>
+    </collision>
+  </link> -->
+
+  <!-- <link name="obj_position_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.1325"/>
+      <geometry>
+        <box size="0.07 0.23 0.265"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.1325"/>
+      <geometry>
+        <box size="0.07 0.23 0.265"/>
+      </geometry>
+    </collision>
+  </link> -->
+  
+  <!-- <link name="obj_position_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 $(param_value)"/>
+      <geometry>
+        <box size="$(param_length) $(param_width) $(param_height)"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 $(param_value)"/>
+      <geometry>
+        <box size="$(param_length) $(param_width) $(param_height)"/>
+      </geometry>
+    </collision>
+  </link> -->
+
+  <!-- <link name="obj_position_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 ${param_value}"/>
+      <geometry>
+        <box size="${param_length} ${param_width} ${param_height}"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 ${param_value}"/>
+      <geometry>
+        <box size="${param_length} ${param_width} ${param_height}"/>
       </geometry>
     </collision>
   </link> -->
@@ -239,14 +354,31 @@
     <child link="plane_link"/>
   </joint>
 
+  <!-- <joint name="plane_link-holder" type="fixed">
+    <origin rpy="0 0 0" xyz="0.35 0 0"/>
+    <parent link="plane_link"/>
+    <child link="holder_link"/>
+  </joint> -->
+
   <!-- <joint name="plane_link-obj_position_link" type="fixed">
     <origin rpy="0 0 0" xyz="0.5 0 0"/>
     <parent link="plane_link"/>
     <child link="obj_position_link"/>
   </joint> -->
 
+  <!-- <joint name="plane_link-obj_position_link" type="fixed">
+    <origin rpy="0 0 0" xyz="$(param_center) 0 0"/>
+    <parent link="plane_link"/>
+    <child link="obj_position_link"/>
+  </joint> -->
+  <!-- <joint name="plane_link-obj_position_link" type="fixed">
+    <origin rpy="0 0 0" xyz="${param_center} 0 0"/>
+    <parent link="plane_link"/>
+    <child link="obj_position_link"/>
+  </joint> -->
+
   <joint name="base_link-wall_link" type="fixed">
-    <origin rpy="0 0 0" xyz="-0.6 0 0"/>
+    <origin rpy="0 0 0" xyz="-0.57 0 0"/>
     <parent link="base_link"/>
     <child link="wall_link"/>
   </joint>

@@ -1,3 +1,6 @@
+#ifndef PLANNING_H
+#define PLANNING_H
+
 #include <ros/ros.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <sensor_msgs/Image.h>
@@ -34,20 +37,27 @@
 #include <moveit_msgs/DisplayTrajectory.h>
 #include <moveit_msgs/PlanningScene.h>
 #include <moveit_visual_tools/moveit_visual_tools.h>
+// #include <moveit_cpp.h>
 
 #include <yaml-cpp/yaml.h>
+#include <XmlRpcValue.h>
+
 
 namespace my_planning
 {
     class MyPlanningClass
     {
         public:
-            MyPlanningClass(): move_group(PLANNING_GROUP)
+            MyPlanningClass(ros::NodeHandle& nh)
+                : move_group(PLANNING_GROUP), nh_(nh)
             {
-                target_pose1.orientation.w = 1.0;
-                target_pose1.position.x = 0.38;
-                target_pose1.position.y = -0.2;
-                target_pose1.position.z = 0.65;
+                if (!nh_.getParam("param_width", width) ||
+                    !nh_.getParam("param_length", length) ||
+                    !nh_.getParam("param_height", height) ||
+                    !nh_.getParam("param_center", center)) 
+                {
+                    throw std::runtime_error("Failed to get the required parameters, permission for planning denied!");
+                }
 
                 move_group.allowReplanning(true);
                 move_group.setNumPlanningAttempts(10);
@@ -76,14 +86,48 @@ namespace my_planning
             const double RAD2DEG = M_PI / 180.0;
             double angle;
             double floor;
+            double radius;
             bool floor_level = false;
             bool smaller_radius = false;
-            double height = 0.2;
-            double width = 0.1;
-            double length = 0.1;
-            double center = 0.5;
-            double offset = 0.1;
-            double step = 15.0;
+
+            //robot
+            // double height = 0.32;
+            // double width = 0.25;
+            // double length = 0.28;
+            // double center = 0.5;
+            // double offset = 0.1;
+            // double step = 15.0;
+
+            // double height = 0.265;
+            // double width = 0.07;
+            // double length = 0.23;
+
+            double height;
+            double width;
+            double length;
+            double center;
+            double offset = 0.05; //udaljenost od predmeta na svakom nivou (radius)
+            double offset_z = 0.1; //offset visine izmedju svakog nivoa
+            double offset_z2 = 0.15; //offset visine na poslednjem nivou
+            double offset_radius = 0.1; //udaljenost predmeta na poslednjem nivou
+            double step = 10.0;
+
+            ros::NodeHandle& nh_;
+
+            // double height = 0.2;
+            // double width = 0.1;
+            // double length = 0.1;
+            // double center = 0.5;
+            // double offset = 0.1;
+            // double step = 15.0;
+
+            // double height = 0.1;
+            // double width = 0.05;
+            // double length = 0.05;
+            // double center = 0.5;
+            // double offset = 0.12;
+            // double step = 15.0;
+            int selfie = 0;
 
             moveit::planning_interface::MoveGroupInterface move_group;
             moveit::planning_interface::PlanningSceneInterface virtual_world;
@@ -98,7 +142,8 @@ namespace my_planning
             geometry_msgs::Pose target_pose;
             geometry_msgs::Pose target_pose1;
 
-            cv_bridge::CvImagePtr cv_ptr;
+            // cv_bridge::CvImagePtr cv_ptr;
             planning::CameraMsg camera_srv;
     };
 }
+#endif // PLANNING_H

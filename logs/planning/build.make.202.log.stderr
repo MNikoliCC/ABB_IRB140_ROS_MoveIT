@@ -1,0 +1,34 @@
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:16[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h: In instantiation of ‘[01m[Kvoid Eigen::PlainObjectBase<Derived>::_init2(Eigen::Index, Eigen::Index, typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type*) [with T0 = double; T1 = double; Derived = Eigen::Matrix<double, 3, 1>; Eigen::Index = long int; typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type = double][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:302:35:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&) [with T0 = double; T1 = double; _Scalar = double; int _Rows = 3; int _Cols = 1; int _Options = 0; int _MaxRows = 3; int _MaxCols = 1][m[K’
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:34:56:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:740:58:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+  740 |       EIGEN_STATIC_ASSERT([01;31m[Kbool(NumTraits<T0>::IsInteger) &&[m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+  741 | [01;31m[K                          bool(NumTraits<T1>::IsInteger)[m[K,
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:16[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h: In instantiation of ‘[01m[Kvoid Eigen::PlainObjectBase<Derived>::_init2(Eigen::Index, Eigen::Index, typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type*) [with T0 = double; T1 = double; Derived = Eigen::Matrix<double, 3, 1>; Eigen::Index = long int; typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type = double][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:302:35:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&) [with T0 = double; T1 = double; _Scalar = double; int _Rows = 3; int _Cols = 1; int _Options = 0; int _MaxRows = 3; int _MaxCols = 1][m[K’
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:34:56:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:740:58:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+  740 |       EIGEN_STATIC_ASSERT([01;31m[Kbool(NumTraits<T0>::IsInteger) &&[m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+  741 | [01;31m[K                          bool(NumTraits<T1>::IsInteger)[m[K,
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/run.dir/build.make:76: CMakeFiles/run.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2096: CMakeFiles/run.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1203: CMakeFiles/server.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

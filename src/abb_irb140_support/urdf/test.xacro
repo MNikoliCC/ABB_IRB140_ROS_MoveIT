@@ -1,0 +1,7 @@
+<!-- my_robot_params.xacro -->
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="param_center" value="0.5" />
+
+</robot>

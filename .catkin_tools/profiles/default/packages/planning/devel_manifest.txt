@@ -16,7 +16,10 @@ planning
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/share/gennodejs/ros/planning/_index.js /home/pilaciv/Workspaces/abb_irb140_ws/devel/share/gennodejs/ros/planning/_index.js
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/share/gennodejs/ros/planning/srv/CameraMsg.js /home/pilaciv/Workspaces/abb_irb140_ws/devel/share/gennodejs/ros/planning/srv/CameraMsg.js
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/share/gennodejs/ros/planning/srv/_index.js /home/pilaciv/Workspaces/abb_irb140_ws/devel/share/gennodejs/ros/planning/srv/_index.js
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/tf2_transforms /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/tf2_transforms
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/xacro_modifier /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/xacro_modifier
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/scan /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/scan
+/home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/parameter_setter /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/parameter_setter
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/run /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/run
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/planning/server /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/planning/server
 /home/pilaciv/Workspaces/abb_irb140_ws/devel/.private/planning/lib/pkgconfig/planning.pc /home/pilaciv/Workspaces/abb_irb140_ws/devel/lib/pkgconfig/planning.pc

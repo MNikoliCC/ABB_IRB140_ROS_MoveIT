@@ -38,9 +38,13 @@ bool getWebCameraImage(planning::CameraMsg::Request &req,
     //         capture.release(); // Release the camera for further use
     //     }
     // }
+    // cv::Mat frame;
+    // frame.release();
 
     // Capture image from the web camera
     cv::VideoCapture capture(2);  // 0 indicates the default camera device
+
+    // cv::waitKey(1000);
 
     // capture.set(cv::CAP_PROP_FRAME_WIDTH, 4000);           // Set frame width
     // capture.set(cv::CAP_PROP_FRAME_HEIGHT, 3000);         // Set frame height
@@ -64,6 +68,9 @@ bool getWebCameraImage(planning::CameraMsg::Request &req,
     // Convert OpenCV image to ROS image message
     sensor_msgs::ImagePtr img_msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg();
 
+    // frame.release();
+    // capture.release();
+
     // Assign the image message to the response
     resp.image = *img_msg;
 
@@ -77,7 +84,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "capture_image_node");
     ros::NodeHandle nh;
 
-    ros::Subscriber image_sub = nh.subscribe("/image_raw", 1, cameraCallback);
+    // ros::Subscriber image_sub = nh.subscribe("/image_raw", 1, cameraCallback);  // For simulated camera
 
     // ros::ServiceServer service = nh.advertiseService("capture_image", getSimulatedCameraImage); // For simulated camera
 

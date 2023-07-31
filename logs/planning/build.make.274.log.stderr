@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target '/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/xacro_modifier.cpp', needed by 'CMakeFiles/xacro_modifier.dir/src/xacro_modifier.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:3180: CMakeFiles/xacro_modifier.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

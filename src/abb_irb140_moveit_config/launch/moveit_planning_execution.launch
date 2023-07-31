@@ -1,4 +1,21 @@
 <launch>
+  <rosparam command="load" file="$(find abb_irb140_support)/config/parameters.yaml" />
+
+  <!-- Define the arguments and set their default values -->
+  <!-- <arg name="param_height" default="0.32" />
+  <arg name="param_width" default="0.28" />
+  <arg name="param_length" default="0.25" />
+  <arg name="param_center" default="0.5" />
+  <arg name="param_value" default="$(eval 0.5 * arg('param_height'))" /> -->
+
+  <!-- Set the parameters on the parameter server -->
+  <!-- <param name="param_height" value="$(arg param_height)" />
+  <param name="param_width" value="$(arg param_width)" />
+  <param name="param_length" value="$(arg param_length)" />
+  <param name="param_center" value="$(arg param_center)" />
+  <param name="param_value" value="$(arg param_value)" /> -->
+
+
   <!-- The planning and execution components of MoveIt! configured to run -->
   <!-- using the ROS-Industrial interface. -->
  
@@ -11,11 +28,11 @@
  
   <!-- the "sim" argument controls whether we connect to a Simulated or Real robot -->
   <!--  - if sim=false, a robot_ip argument is required -->
-  <!-- <arg name="sim" default="true" />
-  <arg name="robot_ip" unless="$(arg sim)" /> -->
+  <arg name="sim" default="true" />
+  <arg name="robot_ip" unless="$(arg sim)" />
 
-  <arg name="sim" default="false" />
-  <arg name="robot_ip" unless="$(arg sim)" default="192.168.0.13" />
+  <!-- <arg name="sim" default="false" />
+  <arg name="robot_ip" unless="$(arg sim)" default="192.168.125.1" /> -->
 
   <!-- By default, we do not start a database (it can be large) -->
   <arg name="db" default="false" />
@@ -42,7 +59,7 @@
   </group>
 
   <!-- publish the robot state (tf transforms) -->
-  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
   <include file="$(find abb_irb140_moveit_config)/launch/move_group.launch">
     <arg name="publish_monitored_planning_scene" value="true" />
@@ -54,6 +71,15 @@
 
     <!-- Load the urdf into the parameter server. -->
   <param name="my_robot_description" textfile="$(find abb_irb140_support)/urdf/irb140.urdf"/>
+
+    <!-- Load the URDF file with the specified arguments -->
+  <!-- <param name="my_robot_description" textfile="$(find abb_irb140_support)/urdf/irb140.urdf">
+    <param name="height" value="$(arg param_height)" />
+    <param name="width" value="$(arg param_width)" />
+    <param name="length" value="$(arg param_length)" />
+    <param name="center" value="$(arg param_center)" />
+    <param name="value" value="$(arg param_value)" />
+  </param> -->
   
   <!-- <param name="my_robot_description" textfile="$(find abb_irb140_support)/urdf/object_to_scan.urdf"/> -->
 
@@ -70,7 +96,7 @@
   <!-- <param name="robot_description" textfile="$(find abb_irb140_support)/urdf/urdf_combiner.xacro" /> -->
 
 
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
   
   <!-- <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher2" >
     <remap from="robot_description" to="my_robot_description" />

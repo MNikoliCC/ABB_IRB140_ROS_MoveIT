@@ -11,7 +11,9 @@
                 "/home/pilaciv/ws_moveit/src/rviz_visual_tools/include",
                 "${workspaceFolder}/src/planning/src",
                 "~/Workspaces/abb_irb140_ws/devel/include",
-                "/usr/include/opencv4"
+                "/usr/include/opencv4",
+                "/home/pilaciv/ws_moveit/src/moveit/moveit_ros/planning/moveit_cpp/include/moveit/moveit_cpp",
+                "/opt/ros/noetic/include/xmlrpcpp"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

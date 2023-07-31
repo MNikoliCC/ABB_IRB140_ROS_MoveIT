@@ -19,7 +19,7 @@ add_custom_target(planning_generate_messages ALL)
 
 get_filename_component(_filename "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv" NAME_WE)
 add_custom_target(_planning_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "planning" "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv" "sensor_msgs/Image:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "planning" "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv" "std_msgs/Header:sensor_msgs/Image"
 )
 
 #
@@ -33,7 +33,7 @@ add_custom_target(_planning_generate_messages_check_deps_${_filename}
 _generate_srv_cpp(planning
   "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/planning
 )
 
@@ -66,7 +66,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS planning_generate_messages_cpp)
 _generate_srv_eus(planning
   "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/planning
 )
 
@@ -99,7 +99,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS planning_generate_messages_eus)
 _generate_srv_lisp(planning
   "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/planning
 )
 
@@ -132,7 +132,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS planning_generate_messages_lisp)
 _generate_srv_nodejs(planning
   "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/planning
 )
 
@@ -165,7 +165,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS planning_generate_messages_nodejs)
 _generate_srv_py(planning
   "/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/srv/CameraMsg.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/sensor_msgs/cmake/../msg/Image.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/planning
 )
 

@@ -1,6 +1,24 @@
 <launch>
 	<arg name="paused" default="false" doc="Start gazebo in paused mode" />
 
+    <!-- Load the common arguments from the common_arguments.yaml file -->
+  <!-- <rosparam command="load" file="$(find abb_irb140_support)/config/parameters.yaml" /> -->
+
+  <!-- Define the arguments and set their default values using the loaded parameters -->
+  <!-- <arg name="param_height" default="$(arg param_height)" />
+  <arg name="param_width" default="$(arg param_width)" />
+  <arg name="param_length" default="$(arg param_length)" />
+  <arg name="param_center" default="$(arg param_center)" />
+  <arg name="param_value" default="$(eval 0.5 * $(arg param_height))" /> -->
+
+  <arg name="param_height" default="0.23" />
+  <arg name="param_width" default="0.06" />
+  <arg name="param_length" default="0.06" />
+  <arg name="param_center" default="0.5" />
+  <arg name="param_value" default="$(eval 0.5 * arg('param_height'))" />
+
+  <!-- <rosparam command="load" file="$(find abb_irb140_support)/config/parameters.yaml" /> -->
+
   <!-- remap topics to conform to ROS-I specifications -->
   <remap from="/arm_controller/follow_joint_trajectory" to="/joint_trajectory_action" />
   <remap from="/arm_controller/state" to="/feedback_states" />
@@ -14,7 +32,16 @@
   </include>
 
   <!-- urdf xml robot description loaded on the Parameter Server, converting the xacro into a proper urdf file-->
-  <include file="$(find abb_irb140_gazebo)/launch/load_irb140.launch" />
+  <!-- <include file="$(find abb_irb140_gazebo)/launch/load_irb140.launch" /> -->
+
+  <!-- <include file="$(find abb_irb140_gazebo)/launch/load_irb140.launch" param_height="$(arg param_height)" param_width="$(arg param_width)" param_length="$(arg param_length)" param_center="$(arg param_center)" /> -->
+  <include file="$(find abb_irb140_gazebo)/launch/load_irb140.launch">
+      <arg name="param_height" value="$(arg param_height)" />
+      <arg name="param_width" value="$(arg param_width)" />
+      <arg name="param_length" value="$(arg param_length)" />
+      <arg name="param_center" value="$(arg param_center)" />
+      <arg name="param_value" value="$(arg param_value)" />
+  </include>
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
   <node name="abb_irb140_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model abb_irb140" />

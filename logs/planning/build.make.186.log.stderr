@@ -1,0 +1,26 @@
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::moveCircular()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:249:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::move(moveit::planning_interface::MoveGroupInterface::Plan&)[m[K’
+  249 |                         auto error_code = move_group.move(my_plan[01;31m[K)[m[K; //blocking
+      |                                                                  [01;31m[K^[m[K
+In file included from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:26[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:754:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::move()[m[K’
+  754 |   moveit::core::MoveItErrorCode [01;36m[Kmove[m[K();
+      |                                 [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:754:33:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:[m[K In member function ‘[01m[Kvoid my_planning::MyPlanningClass::moveCircular()[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:249:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::move(moveit::planning_interface::MoveGroupInterface::Plan&)[m[K’
+  249 |                         auto error_code = move_group.move(my_plan[01;31m[K)[m[K; //blocking
+      |                                                                  [01;31m[K^[m[K
+In file included from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:26[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/planning.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:754:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::core::MoveItErrorCode moveit::planning_interface::MoveGroupInterface::move()[m[K’
+  754 |   moveit::core::MoveItErrorCode [01;36m[Kmove[m[K();
+      |                                 [01;36m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:754:33:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+make[2]: *** [CMakeFiles/server.dir/build.make:76: CMakeFiles/server.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1203: CMakeFiles/server.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/run.dir/build.make:76: CMakeFiles/run.dir/src/planning.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2096: CMakeFiles/run.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

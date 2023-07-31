@@ -182,8 +182,17 @@ target_link_libraries(run ${catkin_LIBRARIES} ${OpenCV_INCLUDE_DIRS})
 add_executable(server src/server.cpp include/planning.h src/planning.cpp)
 target_link_libraries(server ${catkin_LIBRARIES} ${OpenCV_INCLUDE_DIRS})
 
-add_executable(scan src/scan.cpp include/planning.h)
-target_link_libraries(scan ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+add_executable(parameter_setter src/parameter_setter.cpp)
+target_link_libraries(parameter_setter ${catkin_LIBRARIES})
+
+# add_executable(xacro_modifier src/xacro_modifier.cpp)
+# target_link_libraries(xacro_modifier ${catkin_LIBRARIES})
+
+# add_executable(scan src/scan.cpp include/planning.h)
+# target_link_libraries(scan ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+
+# add_executable(tf2_transforms src/tf2_transforms.cpp include/planning.h)
+# target_link_libraries(tf2_transforms ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
 # ${Boost_LIBRARIES}
 #############

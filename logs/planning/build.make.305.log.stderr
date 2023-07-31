@@ -1,0 +1,36 @@
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:8:34:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmy_planning::MyPlanningClass::MyPlanningClass()[m[K’
+    8 |     my_planning::MyPlanningClass [01;31m[Kmy_planning_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:1[m[K:
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:48:11:[m[K [01;36m[Knote: [m[K‘[01m[Kmy_planning::MyPlanningClass::MyPlanningClass()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   48 |     class [01;36m[KMyPlanningClass[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:48:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface()[m[K’
+In file included from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/include/planning.h:29[m[K,
+                 from [01m[K/home/pilaciv/Workspaces/abb_irb140_ws/src/planning/src/run.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:172:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(moveit::planning_interface::MoveGroupInterface&&)[m[K’
+  172 |   [01;36m[KMoveGroupInterface[m[K(MoveGroupInterface&& other) noexcept;
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:172:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:159:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const string&, const std::shared_ptr<tf2_ros::Buffer>&, const ros::Duration&)[m[K’
+  159 |   [[deprecated]] [01;36m[KMoveGroupInterface[m[K(const std::string& group, const std::shared_ptr<tf2_ros::Buffer>& tf_buffer,
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:159:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:156:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const string&, const std::shared_ptr<tf2_ros::Buffer>&, const ros::WallDuration&)[m[K’
+  156 |   [01;36m[KMoveGroupInterface[m[K(const std::string& group,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:156:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:146:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const ros::Duration&)[m[K’
+  146 |   [[deprecated]] [01;36m[KMoveGroupInterface[m[K(const Options& opt, const std::shared_ptr<tf2_ros::Buffer>& tf_buffer,
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:146:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:143:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::MoveGroupInterface(const moveit::planning_interface::MoveGroupInterface::Options&, const std::shared_ptr<tf2_ros::Buffer>&, const ros::WallDuration&)[m[K’
+  143 |   [01;36m[KMoveGroupInterface[m[K(const Options& opt,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:143:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+make[2]: *** [CMakeFiles/run.dir/build.make:63: CMakeFiles/run.dir/src/run.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:2096: CMakeFiles/run.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2
